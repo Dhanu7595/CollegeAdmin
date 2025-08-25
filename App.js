@@ -1,8 +1,8 @@
-
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createStackNavigator } from "@react-navigation/stack";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
 import SubjectsScreen from "./screens/SubjectsScreen";
 import StudentsScreen from "./screens/StudentsScreen";
 import AddSubjectScreen from "./screens/AddSubjectScreen";
@@ -10,7 +10,7 @@ import AddStudentScreen from "./screens/AddStudentScreen";
 import StudentDetailsScreen from "./screens/StudentDetailsScreen";
 
 const Tab = createBottomTabNavigator();
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 function SubjectsStack() {
   return (
