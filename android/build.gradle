@@ -8,8 +8,9 @@ buildscript {
         kotlinVersion = "2.0.21"
     }
     repositories {
+          mavenCentral()   // <--- important
         google()
-        mavenCentral()
+        maven { url 'https://www.jitpack.io' }
     }
     dependencies {
         classpath("com.android.tools.build:gradle")
